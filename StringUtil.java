@@ -1,12 +1,12 @@
 package hiai.util;
 /**
- * 处理字符串工具类
- * @author www.hiai.top 开发者：黄康权
+ * 澶勭悊瀛楃涓插伐鍏风被
+ * @author wang
  *
  */
 public class StringUtil {
 	/**
-	 * 判断是否是空
+	 * 鍒ゆ柇鏄惁鏄┖
 	 */
 	public static boolean isEmpty(String str){
 		if(str==null||"".equals(str.trim())){
@@ -16,7 +16,7 @@ public class StringUtil {
 		}
 	}
 	/**
-	 * 判断不是为空
+	 * 鍒ゆ柇涓嶆槸涓虹┖
 	 */
 	public static boolean isNotEmpty(String str ){
 		if((str!=null)&&!"".equals(str.trim())){
