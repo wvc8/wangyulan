@@ -7,17 +7,17 @@ import java.sql.ResultSet;
 import hiai.model.User;
 
 /**
- * ÓÃ»§·ÃÎÊÊı¾İ¿â
- * @author www.hiai.top ¿ª·¢Õß£º»Æ¿µÈ¨
+ * ç”¨æˆ·è®¿é—®æ•°æ®åº“
+ * @author wang
  *
  */
 public class UserDao {
 	/**
-	 * µÇÂ¼ÑéÖ¤£¬ÅĞ¶ÏÓÃ»§ÃûºÍÃÜÂëÊÇ·ñÕıÈ·
+	 * ç™»å½•éªŒè¯ï¼Œåˆ¤æ–­ç”¨æˆ·åå’Œå¯†ç æ˜¯å¦æ­£ç¡®
 	 */
 	public User login(Connection con,User user)throws Exception{
 		User resultUser=null;
-		String sql="select * from stu_user where username=? and password=?";//²éÕÒÊı¾İ¿âµÄ½Ó¿Ú
+		String sql="select * from stu_user where username=? and password=?";//æŸ¥æ‰¾æ•°æ®åº“çš„æ¥å£
 		PreparedStatement pstmt=con.prepareStatement(sql);
 		pstmt.setString(1, user.getUserName());
 		pstmt.setString(2, user.getPassWord());
